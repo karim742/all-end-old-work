@@ -1,0 +1,183 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6,p,b,span,a,li,button,label {
+  font-family: 'BenSen', sans-serif;
+}
+
+.school_name {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  display: inline-block;
+}
+
+.school_name h1 {
+    font-size: 70px;
+}
+
+.Login_main_box{
+  width: 480px;
+  height: 530px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 13%);
+  background-color: #00000017;
+  box-shadow: 0px 0px 10px 5px #00000017;
+  margin-bottom: 200px;
+}
+.LOgin_box_title {
+    width: 23%;
+    height: 50px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.LOgin_box_title h3 {
+    font-size: 50px;
+    color: steelblue;
+}
+.Lgin_box_userInput {
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.Lgin_box_userInput label {
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+}
+
+.Lgin_box_userInput input {
+    width: 376px;
+    height: 12px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-family: 'BenSen';
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    padding: 15px;
+    padding-right: 40px;
+    background: white;
+    color: grey;
+    border: 1px solid #00000047;
+}
+.Lgin_box_userInput button {
+    background-color: tomato;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.Lgin_box_userInput button a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.Lgin_box_userInput button#last-child{
+  float: right;
+  position: relative;
+  top: -70px;
+}
+
+.Lgin_box_userInput button:hover a {
+    color: black;
+    text-decoration-color: blue;
+    font-weight: 700;
+}
+
+
+.forgetPass {
+    width: 90%;
+    margin: auto;
+    padding-top: 25px;
+}
+.forgetPass a{
+  text-decoration: none;
+  color: black
+}
+.forgetPass p {
+    font-family: monospace;
+    font-size: 20px;
+    color: black;
+    transition: 0.2s;
+    display: inline-block;
+}
+.forgetPass a:hover p {
+    color: #ff2700;
+}
+
+.Lgin_box_userInput form span i#hidePass {
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+    cursor: pointer;
+    display: contents;
+}
+.Lgin_box_userInput form span i#showPass{
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: brown;
+  cursor: pointer;
+}
+.Lgin_box_userInput form span.salakajkor{
+    position: relative;
+    top: 46px;
+    left: 290px;
+}
+p#usernameMess,p#passwordMess{
+  color:red;
+}
+
+.animation{
+  animation: kajkorna 0.3s 4;
+  -webkit-animation: kajkorna 0.3s 4;
+  color:red;
+}
+
+
+
+
+
+
+@keyframes kajkorna {
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+  	transform: translateX(15px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+
+@media screen and (max-width: 720px){
+      .school_name h1 {
+          font-size: 60px;
+          margin-top: 100px;
+        }
+}

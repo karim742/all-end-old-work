@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>লগ ইন</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <link href="../All_Image/logo.png" type="image/x-icon" rel="icon"/>
+    <link href="https://fonts.maateen.me/bensen/font.css" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="Fontawesome_file/all.min.css">
+		<link rel="stylesheet" href="Fontawesome_file/fontawesome.min.css">
+    <link rel="stylesheet" href="../CSS/log_in style.css">
+  </head>
+  <body>
+
+
+    <div class="school_name">
+      <h1><span style="color:green">মুগারচর</span> কে, আলী উচ্চ বিদ্যালয়</h1>
+    </div>
+
+    <div class="Login_main_box" id="Login_main_box">
+      <div class="LOgin_box_title">
+        <h3>লগ ইন</h3>
+      </div>
+      <div class="Lgin_box_userInput">
+
+        <form class="form">
+
+        <!-- user input email or number-->
+
+        <label for="username"> <i class="fas fa-envelope"></i> ফোন</label> <br/>
+        <input type="number" name="username" id="username"/> <br/>
+        <p id="usernameMess"></p><br/> <!--user input action meaasge-->
+
+        <!-- user input password-->
+
+        <label for="password"> <i class="fas fa-lock"></i>  পাসওয়ার্ড</label>
+
+        <!--password show and hide-->
+        <span class="salakajkor">
+          <i id="hidePass" class="far fa-eye"></i>
+          <!-- <i id="showPass" onclick="hidePassword()" class="far fa-eye-slash"></i> -->
+        </span> <br/>
+
+        <input type="password" name="password" id="password"> <br/>
+        <p id="passwordMess"></p><br/> <!--user input action meaasge-->
+
+        <button type="submit" id="loginBtn"><a>লগ ইন</a></button>
+        
+
+        </form>
+        <button type="button" id="last-child"><a href="Sign_Up.html">সাইন আপ করুন</a></button>
+
+      </div>
+      <div class="forgetPass">
+        <a href="#"><p>Forgot password ?</p></a>
+      </div>
+
+    </div>
+
+
+
+
+
+
+<script type="text/javascript" src="../JavaScript/log_in_proggraming.js">
+
+</script>
+  </body>
+</html>

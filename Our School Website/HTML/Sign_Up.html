@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>সাইন আপ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <link href="../All_Image/logo.png" type="image/x-icon" rel="icon"/>
+    <link href="https://fonts.maateen.me/bensen/font.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afd52fc722.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/Sign_Up_Style.css">
+  </head>
+  <body>
+
+
+    <div class="school_name">
+      <h1><span style="color:green">মুগারচর</span> কে, আলী উচ্চ বিদ্যালয়</h1>
+    </div>
+
+    <div class="Login_main_box">
+      <div class="LOgin_box_title">
+        <h3>সাইন আপ</h3>
+      </div>
+      <div class="Lgin_box_userInput">
+
+        <form class="form">
+
+            <label for="name"> <i class="fas fa-user-tie"></i>  নাম</label> <br/>
+            <input type="text" name="name" id="name"/> <br/>
+
+            <p id="name_message"></p> <br/>
+
+            <label for="class"> <i class="fas fa-university"></i>  শ্রেনী</label> <br/>
+
+            <select name="class" id="class" onchange="disabled_option()">
+              <option value="">আপনার শ্রেনী নির্বাচন করুন</option>
+              <option value="ষষ্ঠ">ষষ্ঠ</option>
+              <option value="সপ্তম">সপ্তম</option>
+              <option value="অষ্টম">অষ্টম</option>
+              <option value="নবম">নবম</option>
+              <option value="দশম">দশম</option>
+            </select><br/>
+
+            <p id ="class_message"></p> <br/>
+
+            <label for="department"> <i class="fas fa-user-astronaut"></i>  বিভাগ</label> <br/>
+            <select class="department" name="department" id="department" >
+              <option value="">আপনার বিভাগ নির্বাচন করুন</option>
+              <option value="বিজ্ঞান">বিজ্ঞান</option>
+              <option value="ব্যবসা শিক্ষা">ব্যবসায় শিক্ষা</option>
+              <option value="মানবিক">মানবিক</option>
+            </select> <br/>
+
+            <p id ="group_message"></p> <br/>
+
+            <label for="roll_no"> <i class="fas fa-lock"></i>  রোল নং</label> <br/>
+            <input type="number" name="roll_no" id="roll_no"> <br/>
+            
+            <p id="message_roll_no"></p>
+            
+            <br/>
+
+            <label for="self_number"> <i class="fas fa-mobile-alt"></i> মোবাইল নাম্বার</label> <br/>
+            <input type="number" name="self_number" id="self_number"> <br/>
+
+            <p id="number_message"></p> <br/>
+
+            <label for="password"> <i class="fas fa-lock"></i>  পাসওয়ার্ড</label> <br/>
+
+            <span class="salakajkor">
+              <i id="hidePass" class="far fa-eye"></i>
+            </span> <br/>
+
+            <input type="password" name="password" id="password"> <br/>
+
+            <p id="password_message"></p> <br/>
+
+            <button type="submit" id="submit"><a id="gotohomepage">সাইন আপ করুন</a></button>
+            <button type="button" id="last-child"><a href="log_in.html">লগ ইন</a></button>
+
+        </form>
+
+      </div>
+      <div class="forgetPass">
+        <a href="#"><p>Forgot password ?</p></a>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../JavaScript\sign_up_programming.js">
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,778 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+#MEETTEAM{
+	width:100%;
+	height:500px;
+}
+.container{
+	margin-left:50%;
+	transform:translateX(-50%);
+	width:1140px;
+	height: 230px;
+}
+
+.toptitleinfo{
+	padding-top:40px;
+}
+
+.maintitle {
+    overflow: hidden;
+}
+
+
+.toptitleinfo .maintitle h1{
+	color:black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight:600;
+	text-align:center;
+	width:100%;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 20px;
+}
+.toptitleinfo .maintitle h1:after{
+	content:"";
+	background: #FF5200;
+	width: 60px;
+	position: absolute;
+	margin-bottom: 1px solid #FF5200;
+	top: 0px;
+	left: 535px;
+	bottom: 0px;
+	height: 3px;
+	margin-top: 70px;
+}
+.toptitleinfo .subtitle{
+	margin-left: 625px;
+	transform:translateX(-50%);
+	overflow: hidden;
+}
+
+.toptitleinfo .subtitle p{
+	color: #4c4b4b;
+	font-family: 'Oswald', sans-serif;
+	font-size:15px;
+	font-weight: 300;
+	text-align:center;
+	width: 410px;
+	margin-top:10px;
+	line-height: 1.4;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+	overflow: hidden;
+}
+.MTWrapper {
+    margin-top: 40px;
+}
+
+.singleperson {
+    width: 250px;
+    border-radius: 2px;
+    overflow: hidden;
+    float: left;
+    margin-right: 45px;
+}
+
+.singleperson:last-child {
+    margin-right: 0px;
+}
+
+.singleperson .singlepersonimg {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.singleperson .singlepersonimg img {
+    width: 100%;
+	transition:1s;
+}
+
+.singlepersontitle {
+    width: 248px;
+    border-left: 1px solid #66666642;
+    border-right: 1px solid #66666642;
+    border-bottom: 1px solid #66666642;
+}
+
+.singlepersontitle h3 {
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.singlepersontitle p {
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    padding-bottom: 22px;
+}
+.socialICON {
+    width: 67%;
+    position: absolute;
+    bottom: 50px;
+    text-align:center;
+    left:50%;
+    transform:translateX(-50%);
+}
+.socialICON a{
+	width:20px;
+	height:20px;
+	float:left;
+	overflow:hidden;
+	background:red;
+	display:grid;
+	place-items:center;
+	text-decoration:none;
+	border-radius: 100%;
+	padding: 5px;
+	color:white;
+	margin-right: 15px;
+	transition:0.3s;
+}
+.socialICON a:first-child{
+	background:#026CDB;
+	opacity:0;
+}
+.socialICON a:nth-child(2){
+	background:#20A2F2;
+	opacity:0;
+}
+.socialICON a:nth-child(3){
+	background:#F34A37;
+	opacity:0;
+}
+.socialICON a:last-child{
+	background:#0078B7;
+	opacity:0;
+	margin-right:0px;
+}
+.socialICON a:hover{
+	background:white;
+	color:black;
+}
+.singleperson:hover .socialICON a:first-child{
+	transform:translateY(20px);
+	opacity:1;
+	transition:0.9s;
+}
+.singleperson:hover .socialICON a:nth-child(2){
+	transform:translateY(20px);
+	opacity:1;
+	transition:0.7s;
+}
+.singleperson:hover .socialICON a:nth-child(3){
+	transform:translateY(20px);
+	opacity:1;
+	transition:0.4s;
+}
+.singleperson:hover .socialICON a:last-child{
+	transform:translateY(20px);
+	opacity:1;
+	transition:0.1s;
+}
+.singleperson:hover .singlepersonimg img{
+	transform:scale(1.1);
+}
+
+.singleperson:hover{cursor:pointer}
+
+.meetteambtn button{
+	font-family: 'Oswald', sans-serif;
+	background:black;
+	color:white;
+	font-size: 20px;
+	border:1px solid black;
+	border-radius:2px;
+	padding: 5px 30px;
+	margin-top: 0px;
+	margin-bottom: 35px;
+	transition:0.3s;
+	overflow: hidden;
+}
+.meetteambtn button a {
+    text-decoration: none;
+    color: white;
+}
+
+.meetteambtn {
+    margin-left: 480px;
+    width: 177px;
+    height: 20px;
+    margin-top: 420px;
+}
+.meetteambtn:hover button{
+	background:#FF5200;
+	color:black;
+	border:1px solid #FF5200;
+}
+
+
+
+
+
+#BESTPROJECTS{
+	background:#F5F6F6;
+	margin-top:190px;
+}
+.BPWrapper{
+	margin-top:58px;
+	column-count: 3;
+	padding-bottom: 60px;
+}
+.singleproject .singleprojectIMG{
+	width:350px;
+	overflow: hidden;
+	position: relative;
+}
+.singleproject .singleprojectIMG img{
+	width:100%;
+	cursor:pointer;
+}
+.BPMaintitle {
+    position: absolute;
+    top: 110px;
+    height: 177px;
+    background: linear-gradient(to top, black, #00000005);
+    width: 100%;
+    display: block;
+    transition:0.3s;
+    transform: translateY(50px);
+}
+.BPMaintitle .BPLink {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 30px;
+    
+    transform: translateX(-300px);
+}
+.BPMaintitle h4 {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+.BPMaintitle h3 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    width:300px;
+    font-size: 19px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+}
+.BPMaintitle .BPLink a {
+    text-decoration: none;
+    padding-left: 30px;
+    color: white;
+    margin-bottom: 0px;
+	transition:0.2s;
+}
+.BPMaintitle .BPLink a i {
+    margin-left: 114px;
+    position: absolute;
+    margin-top: -16px;
+}
+.singleproject {
+    overflow: hidden;
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 30px;
+}
+
+.singleproject:last-child {
+    margin-right: 0px;
+}
+
+.singleproject:nth-child(5) {
+    margin-right: 0px;
+}
+
+.singleproject:hover .BPMaintitle{
+	transform: translateY(0px);
+	background: linear-gradient(to top, black, #00000030);
+}
+.singleproject:hover .BPMaintitle .BPLink{
+	transform: translateX(0px);
+	transition:0.5s;
+}
+.singleproject .BPMaintitle .BPLink a:hover{
+	color:red;
+}
+
+
+
+
+
+
+
+section#LATESTNEWS {
+    margin-top: 670px;
+}
+
+.LNSingleperson {
+    width: 350px;
+    padding-bottom: 60px;
+    float: left;
+    margin-right: 45px;
+    margin-top: 40px;
+}
+
+.LNSinglepersonIMG {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.LNSinglepersonIMG img {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.LNdate p {
+    color: #333333a6;
+    padding-top: 20px;
+    padding-left: 20px;
+    float: left;
+    overflow: hidden;
+    width: 85px;
+}
+
+.LNcomment a {
+    padding-top: 18px;
+    padding-left: 45px;
+    overflow: hidden;
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.LNTitleMeta {
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.LNMaintitle h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #3a3a3a;
+}
+
+.LNMaintitle a {
+    text-decoration: none;
+}
+
+.LNSubtitle p {
+    font-family: 'Work Sans', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    line-height: 23px;
+    color: #333333c4;
+}
+
+.LNReadmore a {
+    padding-top: 0px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #FF5200;
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.LNReadmore {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.LNdate p:after {
+	content: "";
+	background: #FF5200;
+	width: 15px;
+	height: 2px;
+	position: absolute;
+	top: 28px;
+	left: 120px;
+}
+
+.LNdate {
+    position: relative;
+}
+.LNReadmore a i {
+    padding-left: 12px;
+    margin-top: 2px;
+    overflow: hidden;
+    position: absolute;
+}
+.LNTitlewrapper {
+    width: 348px;
+    height: 240px;
+    column-count: 1;
+    border-left:1px solid #33333340;
+    border-right:1px solid #33333340;
+    border-bottom:1px solid #33333340;
+    border-radius:2px;
+}
+.LNSingleperson:last-child {
+    margin-right: 0px;
+}
+.LNSingleperson:hover .LNSinglepersonIMG img {
+    transform: scale(1.1);
+    cursor:pointer;
+}
+.LNSinglepersonIMG:hover .LNSinglepersonIMG img {
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+.LNcomment a:hover {
+    color: #FF5200;
+}
+.LNMaintitle a h1:hover {
+    color: #FF5200;
+}
+section#FOOTERBANER {
+    top: -110px;
+    position: relative;
+}
+
+.footerbanerwrapper {
+    margin-top: 600px;
+    background: #FF5200;
+}
+
+.FirstBox {
+    overflow: hidden;
+    float: left;
+    width: 380px;
+    height: 160px;
+}
+
+.ScoundBox {
+    overflow: hidden;
+    float: left;
+    width: 380px;
+    height: 160px;
+}
+
+.ThirdBox {
+    overflow: hidden;
+    width: 380px;
+    height: 160px;
+}
+.FirstBoxTitle {
+    width: 300px;
+}
+
+.FirstBoxTitle h2 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.FirstBoxInput input {
+    margin-left: 30px;
+    height: 44px;
+    width: 250px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.FirstBoxBtn {
+    width: 100px;
+}
+
+.FirstBoxBtn button {
+    background: black;
+    color: white;
+    width: 100px;
+    height: 45px;
+    margin-left: 246px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    position: absolute;
+	cursor:pointer;
+}
+.ScoundBoxSubTitle {
+    padding-left: 30px;
+    width: 100%;
+}
+
+.ScoundBoxSubTitle p {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 25px;
+}
+.FBSocialIcons {
+    padding-left: 30px;
+    padding-top: 9px;
+}
+
+.FBSocialIcons a {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 22px;
+}
+.FBSocialIcons a i {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    position: relative;
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-right: 20px;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+.FBSocialIcons a:hover i {
+    background: white;
+    color: black;
+}
+.CopyrightFooterWrapper {
+    color: white;
+}
+
+.copyrightMETA {
+    overflow: hidden;
+    float: left;
+    margin-top: 30px;
+}
+
+.copyrightMETA p {font-size: 16px;font-family: 'Work Sans', sans-serif;color: #ffffffad;}
+
+footer#CopyrightFooter {
+    background: black;
+    height: 80px;
+    margin-bottom: 0px;
+    top: -528px;
+    position: relative;
+}
+
+.copyrightHelp {
+    overflow: hidden;
+    float: right;
+}
+
+.copyrightHelp ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.copyrightHelp ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.copyrightHelp ul li a {
+    color: #e2e2e2b5;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+}
+section#FOOTER {
+    background: black;
+    height: 420px;
+    margin-top: 401px;
+    position: relative;
+    top: -531px;
+}
+
+.FSingleBox1 {
+	color:white;
+    overflow: hidden;
+    float: left;
+    width: 285px;
+	margin-top:150px;
+}
+.FSingleBox2 {
+	color:white;
+	overflow: hidden;
+	float: left;
+	width: 270px;
+	margin-top:150px;
+}
+.FSingleBox3 {
+	color:white;
+	overflow: hidden;
+	float: left;
+	width: 280px;
+	margin-top:150px;
+}
+.FSingleBox4 {
+	color:white;
+	overflow: hidden;
+	float: left;
+	width: 285px;
+	margin-top:150px;
+	padding-left: 20px;
+}
+.FSingleBox1TITLE {
+    padding-bottom: 30px;
+}
+
+.FSingleBox1TITLE h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffffc9;
+}
+
+.FSingleBox1SubTitle p {
+    font-family: 'Work Sans', sans-serif;
+    word-spacing: 3;
+    line-height: 22px;
+    color: #c5c5c5;
+}
+
+.FSingleBox1ICONS {
+    padding-top: 20px;
+}
+
+.FSingleBox1ICONS a {
+    margin-right: 15px;
+    color: gray;
+    transition: 0.3s;
+}
+
+.FSingleBox1ICONS a:hover {
+    color: #FF5200;
+}
+.FSingleBox2Sub1 i {
+    overflow: hidden;
+    float: left;
+    color: #FF5200;
+    padding-right: 5px;
+    padding-bottom: 22px;
+}
+.FSingleBox2Sub1 p {
+    font-family: 'Work Sans', sans-serif;
+    color: #c5c5c5;
+    line-height: 23px;
+}
+.FSingleBox2Sub2 i {
+    overflow: hidden;
+    float: left;
+    color: #FF5200;
+    padding-right: 5px;
+    padding-bottom: 18px;
+}
+.FSingleBox2Sub2 p {
+    font-family: 'Work Sans', sans-serif;
+    color: #c5c5c5;
+    line-height: 23px;
+}
+.FSingleBox2Sub3 i {
+    overflow: hidden;
+    float: left;
+    color: #FF5200;
+    padding-right: 5px;
+    padding-bottom: 18px;
+}
+.FSingleBox2Sub3 p {
+    font-family: 'Work Sans', sans-serif;
+    color: #c5c5c5;
+    line-height: 23px;
+}
+.FSingleBox3LinkList a {text-decoration: none;
+	color: grey;
+	font-family: 'Work Sans', sans-serif;
+	margin-bottom: 20px;
+}
+
+.FSingleBox3LinkList ul {
+    list-style: none;
+}
+.FSingleBox3LinkList ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted grey;
+    padding-bottom: 10px;
+}
+
+.FSingleBox3LinkList ul li:last-child {
+    border: none;
+}
+.RecentPostDATE {
+    width: 50px;
+    height: 70px;
+    background: #313131;
+    text-align: center;
+    font-family: ARIAL;
+    font-weight: 900;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.RecentPostDATE span {
+    font-size: 25px;
+}
+
+.RecentPostDATE p {
+    font-size: 10px;
+    padding-top: 0px;
+}
+
+.RecentPostTiTle a {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.RecentPostTiTle {
+}
+
+.RecentPostReview i {
+    color: gray;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.RecentPostReview span {
+    font-size: 12px;
+    font-family: 'Work Sans', sans-serif;
+    margin-right: 5px;
+}
+
+.RecentPostTiTle a:hover {
+    color: #FF5200;
+    transition:0.5s;
+}
+.RECENTPOST {
+    overflow: hidden;
+    float: left;
+    margin-bottom: 25px;
+}
+.FooterWrapper {
+    margin-top: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
